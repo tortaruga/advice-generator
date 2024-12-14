@@ -9,7 +9,7 @@ showAdviceBtn.addEventListener('click', () => {
     .then(response => response.json())
     .then(advice => {
         adviceNumber.textContent = advice.slip.id; 
-        adviceText.textContent = advice.slip.advice;
+        adviceText.textContent = `"${advice.slip.advice}"`;
     })
 }) 
 
