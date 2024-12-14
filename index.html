@@ -7,22 +7,38 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="./styles.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    </style>
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  <main>
+    <div class="advice-container">
+      <p class="info">
+        Advice #<span class="advice-number">117</span>
+      </p>
 
-  "<!-- Advice text goes here -->"
+      <p class="advice">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
+      
+      <picture>
+        <source media="(min-width: 576px)" srcset="./images/pattern-divider-desktop.svg">
+        <img src="./images/pattern-divider-mobile.svg" alt="decorative divider"> 
+      </picture>
+
+      <button class="show-advice-btn" type="button" aria-label="generate advice button"></button>
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/tortaruga" target="_blank">tortaruga</a>.
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
 </body>
 </html>

@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  padding: 1rem;
+  margin: 0;
+  color: hsl(193, 38%, 86%);
+}
+
+a {
+  color: hsl(150, 100%, 66%);
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(193, 38%, 86%);
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice-container {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 1rem;
+  padding: 2rem 1rem 4.5rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 10px 10px 20px #1b222c;
+}
+
+.info {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.advice {
+  font-size: 28px;
+  font-weight: 800;
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+.show-advice-btn {
+  display: block;
+  width: 3.8rem;
+  aspect-ratio: 1;
+  background: url(./images/icon-dice.svg) hsl(150, 100%, 66%);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: calc(50% - 1.9rem);
+  bottom: -10%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.show-advice-btn:hover {
+  box-shadow: 0 0 20px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.09rem;
+  padding-inline: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .advice-container {
+    padding-inline: 3rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

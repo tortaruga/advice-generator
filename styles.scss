@@ -1,0 +1,97 @@
+$cyan: hsl(193, 38%, 86%);
+$green: hsl(150, 100%, 66%);
+$gray: hsl(217, 19%, 38%);
+$dark-grey: hsl(217, 19%, 24%);
+$blue: hsl(218, 23%, 16%);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'manrope', sans-serif;
+    background-color: $blue; 
+    padding: 1rem; 
+    margin: 0; 
+    color: $cyan;
+} 
+
+a {
+    color: $green;
+    text-decoration: none;
+    &:hover {
+        color: $cyan; 
+        text-decoration: underline;  
+    }
+}
+
+img {
+    width: 100%; 
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.advice-container {
+    background-color: $dark-grey;   
+    border-radius: 1rem;  
+    padding: 2rem 1rem 4.5rem;   
+    text-align: center;  
+    position: relative;
+    box-shadow: 10px 10px 20px darken($color: $blue, $amount: 2);              
+} 
+ 
+.info {
+    color: $green;
+    text-transform: uppercase;
+    letter-spacing: .2rem;   
+    font-size: .8rem; 
+    font-weight: 800;      
+} 
+
+.advice {
+    font-size: 28px; 
+    font-weight: 800; 
+    max-width: 450px;   
+    margin-inline: auto; 
+}
+
+.show-advice-btn {
+    display: block;
+    $width: 3.8rem;
+    width: $width;    
+    aspect-ratio: 1;
+    background: url(./images/icon-dice.svg) $green;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; 
+    border: none;
+    position: absolute; 
+    left: calc(50% - ($width / 2));  
+    bottom: -10%;  
+    transition: .3s; 
+    cursor: pointer ;
+
+    &:hover { 
+        box-shadow: 0 0 20px $green,  
+        0 0 40px $green;   
+    } 
+}
+
+footer {
+    text-align: center;
+    font-size: .8rem;
+    letter-spacing: .09rem; 
+    padding-inline: 2rem;    
+}
+
+@media screen and (min-width: 576px) {
+    .advice-container {
+        padding-inline: 3rem;  
+    }
+    
+}
