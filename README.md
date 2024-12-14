@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- [solution](https://your-solution-url.com)
-- [live site](https://your-live-site-url.com)
+- [solution](https://www.frontendmentor.io/solutions/advice-generator-M19UfHDUK7)
+- [live site](https://tortaruga.github.io/advice-generator/)
 
 
 ### Built with
